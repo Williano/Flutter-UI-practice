@@ -16,23 +16,24 @@ class _LoginScreenState extends State<LoginScreen> {
         elevation: 0.0,
       ),
       body: Container(
-        child: Container(
-          height: MediaQuery.of(context).size.height / 3,
-          width: MediaQuery.of(context).size.width,
-          color: Colors.blue,
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          color: Colors.grey[300],
+          child: Stack(
             children: [
-              Icon(Icons.ac_unit),
               Container(
-                width: MediaQuery.of(context).size.width / 1.2,
-                height: MediaQuery.of(context).size.height / 4,
-                color: Colors.white,
+                width: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 3,
+                color: Colors.blue,
+                child: Center(
+                  child: CircleAvatar(
+                    backgroundColor: Colors.white,
+                    radius: 60.0,
+                    backgroundImage: NetworkImage(
+                        "https://images.pexels.com/photos/2899097/pexels-photo-2899097.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"),
+                  ),
+                ),
               )
             ],
-          ),
-        ),
-      ),
+          )),
     );
   }
 }
