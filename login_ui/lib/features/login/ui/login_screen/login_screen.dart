@@ -87,18 +87,22 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                   Positioned(
                       top: 520,
-                      left: 150,
-                      right: 150,
+                      left: 10,
+                      right: 10,
                       child: Center(
                         child: SizedBox(
-                          width: double.infinity,
+                          width: 170,
+                          height: 55,
                           child: FlatButton(
                             onPressed: () => {},
                             color: Colors.blue,
                             textColor: Colors.white,
                             child: Text(
                               "LOGIN",
-                              style: TextStyle(letterSpacing: 2),
+                              style: TextStyle(
+                                  letterSpacing: 2,
+                                  fontWeight: FontWeight.normal,
+                                  fontSize: 18),
                             ),
                             height: 50,
                             shape: RoundedRectangleBorder(
