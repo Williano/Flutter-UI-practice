@@ -64,6 +64,9 @@ class _LoginScreenState extends State<LoginScreen> {
                                   TextFormField(
                                       decoration: InputDecoration(
                                     labelText: "EMAIL",
+                                    labelStyle: TextStyle(
+                                        letterSpacing: 1,
+                                        fontWeight: FontWeight.bold),
                                     floatingLabelBehavior:
                                         FloatingLabelBehavior.auto,
                                   )),
@@ -71,8 +74,13 @@ class _LoginScreenState extends State<LoginScreen> {
                                     height: 20,
                                   ),
                                   TextFormField(
-                                    decoration:
-                                        InputDecoration(labelText: "PASSWORD"),
+                                    decoration: InputDecoration(
+                                        labelText: "PASSWORD",
+                                        labelStyle: TextStyle(
+                                            letterSpacing: 1,
+                                            fontWeight: FontWeight.bold),
+                                        floatingLabelBehavior:
+                                            FloatingLabelBehavior.auto),
                                   )
                                 ],
                               )),
