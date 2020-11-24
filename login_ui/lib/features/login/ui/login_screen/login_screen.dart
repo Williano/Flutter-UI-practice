@@ -66,21 +66,25 @@ class _LoginScreenState extends State<LoginScreen> {
                                     labelText: "EMAIL",
                                     labelStyle: TextStyle(
                                         letterSpacing: 1,
-                                        fontWeight: FontWeight.bold),
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.blue),
                                     floatingLabelBehavior:
-                                        FloatingLabelBehavior.auto,
+                                        FloatingLabelBehavior.always,
                                   )),
                                   SizedBox(
                                     height: 20,
                                   ),
                                   TextFormField(
+                                    obscureText: true,
+                                    showCursor: false,
                                     decoration: InputDecoration(
                                         labelText: "PASSWORD",
                                         labelStyle: TextStyle(
                                             letterSpacing: 1,
-                                            fontWeight: FontWeight.bold),
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.blue),
                                         floatingLabelBehavior:
-                                            FloatingLabelBehavior.auto),
+                                            FloatingLabelBehavior.always),
                                   )
                                 ],
                               )),
