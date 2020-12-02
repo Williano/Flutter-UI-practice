@@ -19,7 +19,7 @@ class StartupScreen extends StatelessWidget {
               color: Colors.grey[900].withOpacity(0.6),
             ),
             Positioned(
-              top: MediaQuery.of(context).size.height / 1.6,
+              top: MediaQuery.of(context).size.height / 1.7,
               right: MediaQuery.of(context).size.width / 20,
               child: Center(
                 child: Column(
@@ -40,7 +40,7 @@ class StartupScreen extends StatelessWidget {
                           fontWeight: FontWeight.w300),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 10,
                     ),
                     Text(
                       "Make the most delicious meals with the",
@@ -57,7 +57,7 @@ class StartupScreen extends StatelessWidget {
                           letterSpacing: 0.5),
                     ),
                     SizedBox(
-                      height: 25,
+                      height: 20,
                     ),
                     SizedBox(
                       width: MediaQuery.of(context).size.width / 1.1,
