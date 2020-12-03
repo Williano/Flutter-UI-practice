@@ -9,7 +9,7 @@ class SearchFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 8.0, right: 8.0),
+      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
       child: Container(
         height: 35,
         child: TextField(
@@ -35,7 +35,7 @@ class SearchFieldWidget extends StatelessWidget {
                   borderRadius: BorderRadius.circular(50)),
               focusedBorder: OutlineInputBorder(
                   borderSide: BorderSide(color: Colors.grey[200], width: 0),
-                  borderRadius: BorderRadius.circular(50))),
+                  borderRadius: BorderRadius.circular(20))),
         ),
       ),
     );
