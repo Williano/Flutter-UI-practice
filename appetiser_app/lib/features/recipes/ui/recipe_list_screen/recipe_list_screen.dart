@@ -18,7 +18,8 @@ class _RecipeListScreenState extends State<RecipeListScreen> {
             SizedBox(
               height: 10,
             ),
-            SearchFieldWidget()
+            SearchFieldWidget(),
+            Expanded(child: Container())
           ],
         ),
       )),
