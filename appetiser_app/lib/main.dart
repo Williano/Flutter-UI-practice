@@ -1,3 +1,4 @@
+import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_screen.dart';
 import 'package:appetiser_app/features/recipes/ui/startup_screen/startup_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +15,7 @@ class AppetiserApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: StartupScreen(),
+      home: RecipeListScreen(),
     );
   }
 }
