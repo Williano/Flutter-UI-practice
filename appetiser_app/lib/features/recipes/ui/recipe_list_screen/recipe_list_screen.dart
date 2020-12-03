@@ -1,4 +1,4 @@
-import 'package:flutter/cupertino.dart';
+import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_widgets/search_button_widget.dart';
 import 'package:flutter/material.dart';
 
 class RecipeListScreen extends StatefulWidget {
@@ -18,40 +18,7 @@ class _RecipeListScreenState extends State<RecipeListScreen> {
             SizedBox(
               height: 10,
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 8.0, right: 8.0),
-              child: Container(
-                height: 35,
-                child: TextField(
-                  cursorColor: Colors.grey,
-                  decoration: InputDecoration(
-                      prefixIcon: Icon(
-                        CupertinoIcons.search,
-                        color: Colors.grey[400],
-                      ),
-                      labelText: "Search ingredients..",
-                      labelStyle: TextStyle(
-                        color: Colors.grey[400],
-                        fontSize: 15,
-                      ),
-                      floatingLabelBehavior: FloatingLabelBehavior.never,
-                      filled: true,
-                      fillColor: Colors.grey[100],
-                      enabledBorder: OutlineInputBorder(
-                          borderSide:
-                              BorderSide(color: Colors.grey[200], width: 0),
-                          borderRadius: BorderRadius.circular(50)),
-                      disabledBorder: OutlineInputBorder(
-                          borderSide:
-                              BorderSide(color: Colors.grey[200], width: 0.0),
-                          borderRadius: BorderRadius.circular(50)),
-                      focusedBorder: OutlineInputBorder(
-                          borderSide:
-                              BorderSide(color: Colors.grey[200], width: 0),
-                          borderRadius: BorderRadius.circular(50))),
-                ),
-              ),
-            )
+            SearchFieldWidget()
           ],
         ),
       )),
