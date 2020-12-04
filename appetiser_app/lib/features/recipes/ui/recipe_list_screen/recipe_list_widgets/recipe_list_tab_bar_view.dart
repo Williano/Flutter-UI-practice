@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 class RecipeListTabBarViewWidget extends StatelessWidget {
+  final TabController _tabcontroller;
+  final List<Widget> _screens;
+
   const RecipeListTabBarViewWidget({
     Key key,
     @required TabController tabcontroller,
+    @required List<Widget> screens,
   })  : _tabcontroller = tabcontroller,
+        _screens = screens,
         super(key: key);
-
-  final TabController _tabcontroller;
 
   @override
   Widget build(BuildContext context) {
@@ -15,18 +18,7 @@ class RecipeListTabBarViewWidget extends StatelessWidget {
         child: TabBarView(
       key: PageStorageKey("Tabcontroller"),
       controller: _tabcontroller,
-      children: [
-        Container(color: Colors.red),
-        Container(
-          color: Colors.yellow,
-        ),
-        Container(
-          color: Colors.pink,
-        ),
-        Container(
-          color: Colors.black,
-        )
-      ],
+      children: _screens,
     ));
   }
 }
