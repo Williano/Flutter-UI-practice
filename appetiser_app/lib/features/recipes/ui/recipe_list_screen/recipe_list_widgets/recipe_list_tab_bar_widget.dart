@@ -19,7 +19,7 @@ class RecipeListTabBarWidget extends StatelessWidget {
             width: 3,
             color: Colors.yellow[800],
           ),
-          insets: EdgeInsets.symmetric(horizontal: 35.0)),
+          insets: EdgeInsets.symmetric(horizontal: 35.0, vertical: 11.0)),
       indicatorWeight: 3,
       controller: _tabcontroller,
       labelStyle: TextStyle(color: Colors.black),
