@@ -29,6 +29,19 @@ class _RecipeListScreenState extends State<RecipeListScreen>
     )
   ];
 
+  List<Widget> _screens = [
+    Container(color: Colors.red),
+    Container(
+      color: Colors.yellow,
+    ),
+    Container(
+      color: Colors.pink,
+    ),
+    Container(
+      color: Colors.black,
+    )
+  ];
+
   @override
   void initState() {
     _tabcontroller = TabController(length: 4, vsync: this);
@@ -51,7 +64,10 @@ class _RecipeListScreenState extends State<RecipeListScreen>
               tabcontroller: _tabcontroller,
               tabs: recipeListtabs,
             ),
-            RecipeListTabBarViewWidget(tabcontroller: _tabcontroller)
+            RecipeListTabBarViewWidget(
+              tabcontroller: _tabcontroller,
+              screens: _screens,
+            ),
           ],
         ),
       )),
