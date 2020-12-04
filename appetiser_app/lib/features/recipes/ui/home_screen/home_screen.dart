@@ -1,3 +1,4 @@
+import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_screen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material_design_icons_flutter/material_design_icons_flutter.dart';
@@ -12,8 +13,8 @@ class _HomeScreenState extends State<HomeScreen> {
   final PageStorageBucket pageStorageBucket = PageStorageBucket();
 
   final List<Widget> _screens = [
-    Container(
-      color: Colors.red,
+    RecipeListScreen(
+      key: PageStorageKey("RecipeListScreenKey"),
     ),
     Container(
       color: Colors.yellow,
