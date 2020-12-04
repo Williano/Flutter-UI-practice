@@ -1,6 +1,5 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class SearchFieldWidget extends StatelessWidget {
   const SearchFieldWidget({
@@ -16,9 +15,10 @@ class SearchFieldWidget extends StatelessWidget {
         child: TextField(
           cursorColor: Colors.grey,
           decoration: InputDecoration(
-              prefixIcon: FaIcon(
-                FontAwesomeIcons.search,
+              prefixIcon: Icon(
+                CupertinoIcons.search,
                 color: Colors.grey[400],
+                size: 20,
               ),
               labelText: "Search ingredients..",
               labelStyle: TextStyle(
