@@ -4,6 +4,8 @@ import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list
 import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_widgets/search_button_widget.dart';
 
 class RecipeListScreen extends StatefulWidget {
+  const RecipeListScreen({Key key}) : super(key: key);
+
   @override
   _RecipeListScreenState createState() => _RecipeListScreenState();
 }
