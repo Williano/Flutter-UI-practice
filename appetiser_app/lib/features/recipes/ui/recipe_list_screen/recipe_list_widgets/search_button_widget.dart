@@ -9,7 +9,7 @@ class SearchFieldWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+      padding: const EdgeInsets.only(left: 25.0, right: 25.0),
       child: Container(
         height: 35,
         child: TextField(
