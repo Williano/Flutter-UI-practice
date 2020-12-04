@@ -1,13 +1,16 @@
 import 'package:flutter/material.dart';
 
 class RecipeListTabBarWidget extends StatelessWidget {
+  final TabController _tabcontroller;
+  final List<Tab> _tabs;
+
   const RecipeListTabBarWidget({
     Key key,
+    @required List<Tab> tabs,
     @required TabController tabcontroller,
   })  : _tabcontroller = tabcontroller,
+        _tabs = tabs,
         super(key: key);
-
-  final TabController _tabcontroller;
 
   @override
   Widget build(BuildContext context) {
@@ -23,20 +26,7 @@ class RecipeListTabBarWidget extends StatelessWidget {
       indicatorWeight: 3,
       controller: _tabcontroller,
       labelStyle: TextStyle(color: Colors.black),
-      tabs: [
-        Tab(
-          text: "All recipes",
-        ),
-        Tab(
-          text: "Brekkie",
-        ),
-        Tab(
-          text: "Lunch",
-        ),
-        Tab(
-          text: "Dinner",
-        )
-      ],
+      tabs: _tabs,
     );
   }
 }

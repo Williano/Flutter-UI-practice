@@ -14,6 +14,21 @@ class _RecipeListScreenState extends State<RecipeListScreen>
     with TickerProviderStateMixin {
   TabController _tabcontroller;
 
+  List<Tab> recipeListtabs = [
+    Tab(
+      text: "All recipes",
+    ),
+    Tab(
+      text: "Brekkie",
+    ),
+    Tab(
+      text: "Lunch",
+    ),
+    Tab(
+      text: "Dinner",
+    )
+  ];
+
   @override
   void initState() {
     _tabcontroller = TabController(length: 4, vsync: this);
@@ -32,7 +47,10 @@ class _RecipeListScreenState extends State<RecipeListScreen>
               height: 10,
             ),
             SearchFieldWidget(),
-            RecipeListTabBarWidget(tabcontroller: _tabcontroller),
+            RecipeListTabBarWidget(
+              tabcontroller: _tabcontroller,
+              tabs: recipeListtabs,
+            ),
             RecipeListTabBarViewWidget(tabcontroller: _tabcontroller)
           ],
         ),
