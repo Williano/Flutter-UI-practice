@@ -48,6 +48,8 @@ class _HomeScreenState extends State<HomeScreen> {
         currentIndex: _currentIndex,
         selectedItemColor: Colors.yellow[800],
         unselectedItemColor: Colors.grey[600],
+        selectedFontSize: 14.0,
+        unselectedFontSize: 14.0,
         type: BottomNavigationBarType.fixed,
         onTap: (int index) {
           setState(() {
