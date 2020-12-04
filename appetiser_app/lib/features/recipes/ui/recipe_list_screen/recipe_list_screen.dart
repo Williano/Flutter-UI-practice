@@ -1,3 +1,4 @@
+import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_widgets/recipe_list_bottom_navigation_bar_widget.dart';
 import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_widgets/recipe_list_tab_bar_view.dart';
 import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_widgets/recipe_list_tab_bar_widget.dart';
 import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_widgets/search_button_widget.dart';
