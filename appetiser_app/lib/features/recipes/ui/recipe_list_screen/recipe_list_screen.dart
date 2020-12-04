@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_widgets/recipe_list_tab_bar_view.dart';
-import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_widgets/recipe_list_tab_bar_widget.dart';
+import 'package:appetiser_app/shared/widgets/tab_bar_view_widget/tab_bar_view.dart';
+import 'package:appetiser_app/shared/widgets/tab_bar_widget/tab_bar_widget.dart';
 import 'package:appetiser_app/features/recipes/ui/recipe_list_screen/recipe_list_widgets/search_button_widget.dart';
 
 class RecipeListScreen extends StatefulWidget {
@@ -60,11 +60,11 @@ class _RecipeListScreenState extends State<RecipeListScreen>
               height: 10,
             ),
             SearchFieldWidget(),
-            RecipeListTabBarWidget(
+            TabBarWidget(
               tabcontroller: _tabcontroller,
               tabs: recipeListtabs,
             ),
-            RecipeListTabBarViewWidget(
+            TabBarViewWidget(
               tabcontroller: _tabcontroller,
               screens: _screens,
             ),
