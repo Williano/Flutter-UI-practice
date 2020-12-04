@@ -11,7 +11,7 @@ class SearchFieldWidget extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 25.0, right: 25.0),
       child: Container(
-        height: 35,
+        height: 30,
         child: TextField(
           cursorColor: Colors.grey,
           decoration: InputDecoration(
