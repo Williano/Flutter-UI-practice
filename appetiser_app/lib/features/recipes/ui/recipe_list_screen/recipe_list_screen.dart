@@ -65,6 +65,7 @@ class _RecipeListScreenState extends State<RecipeListScreen>
               tabs: recipeListtabs,
             ),
             TabBarViewWidget(
+              pageStorageKey: "RecipeListScreenTab",
               tabcontroller: _tabcontroller,
               screens: _screens,
             ),
