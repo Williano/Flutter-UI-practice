@@ -3,18 +3,22 @@ import 'package:flutter/material.dart';
 class TabBarWidget extends StatelessWidget {
   final TabController _tabcontroller;
   final List<Tab> _tabs;
+  final String _pageStorageKey;
 
-  const TabBarWidget({
-    Key key,
-    @required List<Tab> tabs,
-    @required TabController tabcontroller,
-  })  : _tabcontroller = tabcontroller,
+  const TabBarWidget(
+      {Key key,
+      @required List<Tab> tabs,
+      @required TabController tabcontroller,
+      @required String pageStorageKey})
+      : _tabcontroller = tabcontroller,
         _tabs = tabs,
+        _pageStorageKey = pageStorageKey,
         super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return TabBar(
+      key: PageStorageKey("$_pageStorageKey"),
       labelColor: Colors.black,
       unselectedLabelColor: Colors.grey[600],
       indicator: UnderlineTabIndicator(

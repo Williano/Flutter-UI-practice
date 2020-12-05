@@ -42,6 +42,9 @@ class _RecipeListScreenState extends State<RecipeListScreen>
     )
   ];
 
+  final String _pageStorageKeyTab = "RecipeListScreenTab";
+  final String _pageStorageKeyTabBarView = "RecipeListScreenTabBarView";
+
   @override
   void initState() {
     _tabcontroller = TabController(length: 4, vsync: this);
@@ -61,11 +64,12 @@ class _RecipeListScreenState extends State<RecipeListScreen>
             ),
             SearchFieldWidget(),
             TabBarWidget(
+              pageStorageKey: _pageStorageKeyTab,
               tabcontroller: _tabcontroller,
               tabs: recipeListtabs,
             ),
             TabBarViewWidget(
-              pageStorageKey: "RecipeListScreenTab",
+              pageStorageKey: _pageStorageKeyTabBarView,
               tabcontroller: _tabcontroller,
               screens: _screens,
             ),
