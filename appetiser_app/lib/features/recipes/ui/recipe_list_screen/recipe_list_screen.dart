@@ -30,7 +30,34 @@ class _RecipeListScreenState extends State<RecipeListScreen>
   ];
 
   List<Widget> _screens = [
-    Container(color: Colors.red),
+    Container(
+      child: ListView.builder(
+          physics: BouncingScrollPhysics(),
+          itemBuilder: (BuildContext context, int index) {
+            return Container(
+              child: Column(
+                children: [
+                  Image.asset("assets/images/hamburger.jpg"),
+                  Text("Ginger Marinated Tempeh"),
+                  Text("Easy and delicious"),
+                  Row(
+                    children: [
+                      Row(
+                        children: [
+                          Icon(Icons.watch_later),
+                          SizedBox(
+                            width: 2,
+                          ),
+                          Text("20 mins")
+                        ],
+                      )
+                    ],
+                  )
+                ],
+              ),
+            );
+          }),
+    ),
     Container(
       color: Colors.yellow,
     ),
