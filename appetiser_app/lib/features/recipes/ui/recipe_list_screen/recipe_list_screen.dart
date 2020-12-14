@@ -35,15 +35,38 @@ class _RecipeListScreenState extends State<RecipeListScreen>
           physics: BouncingScrollPhysics(),
           itemBuilder: (BuildContext context, int index) {
             return Container(
+              padding: const EdgeInsets.only(left: 10.0, right: 10.0),
               child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
-                  Image.asset("assets/images/hamburger.jpg"),
-                  Text("Ginger Marinated Tempeh"),
+                  ClipRRect(
+                    borderRadius: BorderRadius.circular(10.0),
+                    child: Image.asset(
+                      "assets/images/hamburger.jpg",
+                      fit: BoxFit.cover,
+                    ),
+                  ),
+                  Text(
+                    "Ginger Marinated Tempeh",
+                    style: TextStyle(fontWeight: FontWeight.bold),
+                  ),
                   Text("Easy and delicious"),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: [
                       Row(
                         children: [
+                          Icon(Icons.watch_later),
+                          SizedBox(
+                            width: 2,
+                          ),
+                          Text("20 mins"),
+                          Icon(Icons.watch_later),
+                          SizedBox(
+                            width: 2,
+                          ),
+                          Text("20 mins"),
                           Icon(Icons.watch_later),
                           SizedBox(
                             width: 2,
