@@ -35,7 +35,7 @@ class _RecipeListScreenState extends State<RecipeListScreen>
           physics: BouncingScrollPhysics(),
           itemBuilder: (BuildContext context, int index) {
             return Container(
-              padding: const EdgeInsets.only(left: 10.0, right: 10.0),
+              padding: const EdgeInsets.only(left: 15.0, right: 15.0),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -47,35 +47,64 @@ class _RecipeListScreenState extends State<RecipeListScreen>
                       fit: BoxFit.cover,
                     ),
                   ),
+                  SizedBox(
+                    height: 5.0,
+                  ),
                   Text(
                     "Ginger Marinated Tempeh",
-                    style: TextStyle(fontWeight: FontWeight.bold),
+                    style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
+                  ),
+                  SizedBox(
+                    height: 5.0,
                   ),
                   Text("Easy and delicious"),
+                  SizedBox(
+                    height: 5.0,
+                  ),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       Row(
                         children: [
-                          Icon(Icons.watch_later),
+                          Icon(Icons.watch_later, color: Colors.grey[600]),
                           SizedBox(
-                            width: 2,
+                            width: 3,
                           ),
-                          Text("20 mins"),
-                          Icon(Icons.watch_later),
+                          Text("20 mins",
+                              style: TextStyle(color: Colors.grey[600])),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(Icons.cleaning_services,
+                              color: Colors.grey[600]),
                           SizedBox(
-                            width: 2,
+                            width: 3,
                           ),
-                          Text("20 mins"),
-                          Icon(Icons.watch_later),
+                          Text("2 serves",
+                              style: TextStyle(color: Colors.grey[600])),
+                        ],
+                      ),
+                      Row(
+                        children: [
+                          Icon(
+                            Icons.wb_twighlight,
+                            color: Colors.grey[600],
+                          ),
                           SizedBox(
-                            width: 2,
+                            width: 3,
                           ),
-                          Text("20 mins")
+                          Text(
+                            "350 calories",
+                            style: TextStyle(color: Colors.grey[600]),
+                          ),
                         ],
                       )
                     ],
-                  )
+                  ),
+                  SizedBox(
+                    height: 20.0,
+                  ),
                 ],
               ),
             );
