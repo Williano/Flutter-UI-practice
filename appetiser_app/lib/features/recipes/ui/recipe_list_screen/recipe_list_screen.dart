@@ -66,37 +66,45 @@ class _RecipeListScreenState extends State<RecipeListScreen>
                     children: [
                       Row(
                         children: [
-                          Icon(Icons.watch_later, color: Colors.grey[600]),
+                          Icon(
+                            Icons.watch_later,
+                            color: Colors.grey[500],
+                            size: 16,
+                          ),
                           SizedBox(
                             width: 3,
                           ),
                           Text("20 mins",
-                              style: TextStyle(color: Colors.grey[600])),
+                              style: TextStyle(color: Colors.grey[500])),
                         ],
                       ),
                       Row(
                         children: [
-                          Icon(Icons.cleaning_services,
-                              color: Colors.grey[600]),
+                          Icon(
+                            Icons.cleaning_services,
+                            color: Colors.grey[500],
+                            size: 16,
+                          ),
                           SizedBox(
                             width: 3,
                           ),
                           Text("2 serves",
-                              style: TextStyle(color: Colors.grey[600])),
+                              style: TextStyle(color: Colors.grey[500])),
                         ],
                       ),
                       Row(
                         children: [
                           Icon(
                             Icons.wb_twighlight,
-                            color: Colors.grey[600],
+                            color: Colors.grey[500],
+                            size: 16,
                           ),
                           SizedBox(
                             width: 3,
                           ),
                           Text(
                             "350 calories",
-                            style: TextStyle(color: Colors.grey[600]),
+                            style: TextStyle(color: Colors.grey[500]),
                           ),
                         ],
                       )
