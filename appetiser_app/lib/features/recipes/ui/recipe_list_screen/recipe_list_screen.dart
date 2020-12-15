@@ -40,6 +40,9 @@ class _RecipeListScreenState extends State<RecipeListScreen>
               recipeImage: "assets/images/hamburger.jpg",
               recipeTitle: "Ginger Marinated Tempeh",
               recipeSubTitle: "Easy and delicious",
+              minutesToCook: "20 mins",
+              serves: "2",
+              numberOfCalories: "250 calories",
             );
           }),
     ),
