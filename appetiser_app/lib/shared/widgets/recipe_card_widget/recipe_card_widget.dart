@@ -5,12 +5,18 @@ class RecipeCardWidget extends StatefulWidget {
   final String recipeImage;
   final String recipeTitle;
   final String recipeSubTitle;
+  final String minutesToCook;
+  final String serves;
+  final String numberOfCalories;
 
   const RecipeCardWidget(
       {this.key,
       @required this.recipeImage,
       @required this.recipeTitle,
-      @required this.recipeSubTitle});
+      @required this.recipeSubTitle,
+      @required this.minutesToCook,
+      @required this.serves,
+      @required this.numberOfCalories});
 
   @override
   _RecipeCardWidgetState createState() => _RecipeCardWidgetState();
