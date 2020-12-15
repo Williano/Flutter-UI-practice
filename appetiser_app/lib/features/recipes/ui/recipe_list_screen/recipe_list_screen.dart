@@ -92,11 +92,16 @@ class _RecipeListScreenState extends State<RecipeListScreen>
   }
 }
 
-class RecipeWidget extends StatelessWidget {
+class RecipeWidget extends StatefulWidget {
   const RecipeWidget({
     Key key,
   }) : super(key: key);
 
+  @override
+  _RecipeWidgetState createState() => _RecipeWidgetState();
+}
+
+class _RecipeWidgetState extends State<RecipeWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
