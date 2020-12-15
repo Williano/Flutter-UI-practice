@@ -121,7 +121,7 @@ class _RecipeWidgetState extends State<RecipeWidget> {
           ClipRRect(
             borderRadius: BorderRadius.circular(10.0),
             child: Image.asset(
-              "assets/images/hamburger.jpg",
+              "$recipeImage",
               fit: BoxFit.cover,
             ),
           ),
@@ -129,13 +129,13 @@ class _RecipeWidgetState extends State<RecipeWidget> {
             height: 5.0,
           ),
           Text(
-            "Ginger Marinated Tempeh",
+            "$recipeTitle",
             style: TextStyle(fontWeight: FontWeight.bold, fontSize: 17),
           ),
           SizedBox(
             height: 5.0,
           ),
-          Text("Easy and delicious"),
+          Text("$recipeSubTitle"),
           SizedBox(
             height: 5.0,
           ),
