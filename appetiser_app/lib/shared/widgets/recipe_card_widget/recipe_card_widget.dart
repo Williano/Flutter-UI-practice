@@ -1,22 +1,22 @@
 import 'package:flutter/material.dart';
 
-class RecipeWidget extends StatefulWidget {
+class RecipeCardWidget extends StatefulWidget {
   final Key key;
   final String recipeImage;
   final String recipeTitle;
   final String recipeSubTitle;
 
-  const RecipeWidget(
+  const RecipeCardWidget(
       {this.key,
       @required this.recipeImage,
       @required this.recipeTitle,
       @required this.recipeSubTitle});
 
   @override
-  _RecipeWidgetState createState() => _RecipeWidgetState();
+  _RecipeCardWidgetState createState() => _RecipeCardWidgetState();
 }
 
-class _RecipeWidgetState extends State<RecipeWidget> {
+class _RecipeCardWidgetState extends State<RecipeCardWidget> {
   @override
   Widget build(BuildContext context) {
     String recipeImage = widget.recipeImage;
