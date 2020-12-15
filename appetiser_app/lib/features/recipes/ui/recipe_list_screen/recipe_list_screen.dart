@@ -93,9 +93,19 @@ class _RecipeListScreenState extends State<RecipeListScreen>
 }
 
 class RecipeWidget extends StatefulWidget {
+  final String _recipeImage;
+  final String _recipeTitle;
+  final String _recipeSubTitle;
+
   const RecipeWidget({
     Key key,
-  }) : super(key: key);
+    String recipeImage,
+    String recipeTitle,
+    String recipeSubTitle,
+  })  : _recipeImage = recipeImage,
+        _recipeTitle = recipeTitle,
+        _recipeSubTitle = recipeSubTitle,
+        super(key: key);
 
   @override
   _RecipeWidgetState createState() => _RecipeWidgetState();
