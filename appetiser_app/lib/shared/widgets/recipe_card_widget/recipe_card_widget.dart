@@ -28,6 +28,9 @@ class _RecipeCardWidgetState extends State<RecipeCardWidget> {
     String recipeImage = widget.recipeImage;
     String recipeTitle = widget.recipeTitle;
     String recipeSubTitle = widget.recipeSubTitle;
+    String minutesToCook = widget.minutesToCook;
+    String serves = widget.serves;
+    String numberOfCalories = widget.numberOfCalories;
 
     return Container(
       padding: const EdgeInsets.only(left: 15.0, right: 15.0),
@@ -69,7 +72,8 @@ class _RecipeCardWidgetState extends State<RecipeCardWidget> {
                   SizedBox(
                     width: 3,
                   ),
-                  Text("20 mins", style: TextStyle(color: Colors.grey[500])),
+                  Text("$minutesToCook",
+                      style: TextStyle(color: Colors.grey[500])),
                 ],
               ),
               Row(
@@ -82,7 +86,7 @@ class _RecipeCardWidgetState extends State<RecipeCardWidget> {
                   SizedBox(
                     width: 3,
                   ),
-                  Text("2 serves", style: TextStyle(color: Colors.grey[500])),
+                  Text("$serves", style: TextStyle(color: Colors.grey[500])),
                 ],
               ),
               Row(
@@ -96,7 +100,7 @@ class _RecipeCardWidgetState extends State<RecipeCardWidget> {
                     width: 3,
                   ),
                   Text(
-                    "350 calories",
+                    "$numberOfCalories",
                     style: TextStyle(color: Colors.grey[500]),
                   ),
                 ],
