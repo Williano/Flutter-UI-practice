@@ -93,19 +93,13 @@ class _RecipeListScreenState extends State<RecipeListScreen>
 }
 
 class RecipeWidget extends StatefulWidget {
-  final String _recipeImage;
-  final String _recipeTitle;
-  final String _recipeSubTitle;
+  final Key key;
+  final String recipeImage;
+  final String recipeTitle;
+  final String recipeSubTitle;
 
-  const RecipeWidget({
-    Key key,
-    String recipeImage,
-    String recipeTitle,
-    String recipeSubTitle,
-  })  : _recipeImage = recipeImage,
-        _recipeTitle = recipeTitle,
-        _recipeSubTitle = recipeSubTitle,
-        super(key: key);
+  const RecipeWidget(
+      {this.key, this.recipeImage, this.recipeTitle, this.recipeSubTitle});
 
   @override
   _RecipeWidgetState createState() => _RecipeWidgetState();
@@ -114,6 +108,10 @@ class RecipeWidget extends StatefulWidget {
 class _RecipeWidgetState extends State<RecipeWidget> {
   @override
   Widget build(BuildContext context) {
+    String recipeImage = widget.recipeImage;
+    String recipeTitle = widget.recipeTitle;
+    String recipeSubTitle = widget.recipeSubTitle;
+
     return Container(
       padding: const EdgeInsets.only(left: 15.0, right: 15.0),
       child: Column(
