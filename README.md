@@ -6,3 +6,5 @@ Code repository for practicing Flutter UI from designs.
 ## Screenshots 
 
 ## Features 
+
+## Contributing 
